@@ -33,6 +33,16 @@
     <img src="./img/first.png" class="dice-img" alt="Dice" id="dice-img" />
     <button type="button" class="btn-roll" onclick="roll()">Roll Dice</button>
 
+
+    <script>
+        function roll() {
+            const min = 1;
+            const max = 6;
+
+            const randomNumber = Math.round(Math.random() * (max - min) + min);
+
+            const imgElement = document.getElementById('dice-img');
+    </script>
 </body>
 
 </html>
